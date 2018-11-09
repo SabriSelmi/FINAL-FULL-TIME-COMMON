@@ -69,10 +69,13 @@ function ValidateName(){
 
 
 
-function CheckPassword(){
+function CheckPassword(e){
   let a =document.getElementById('pass').value;
   if (a !== "Gomycode123" && document.getElementById('mail12').value!=="gomycode@yahoo.fr"){
- document.getElementById('alert12').style.display="block"; }
+ document.getElementById('alert12').style.display="block";
+
+ e.preventDefault()
+}
  else{
     document.getElementById('form12').action="../profil/accueil.html"
  }
