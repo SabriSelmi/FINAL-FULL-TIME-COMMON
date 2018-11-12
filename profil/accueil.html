@@ -15,17 +15,17 @@
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="displayNone()">
                 <div class="navigation">
                                 <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
                     
-                                <label for="navi-toggle" class="navigation__button">
+                                <label for="navi-toggle" class="navigation__button" onclick="display()">
                                     <span class="navigation__icon">&nbsp;</span>
                                 </label>
                     
                                 <div class="navigation__background">&nbsp;</div>
                     
-                                <nav class="navigation__nav">
+                                <nav class="navigation__nav" id='tour'>
                                     <ul class="navigation__list">
                                         <li class="navigation__item"><a href="accueil.html" class="navigation__link">Home</a></li>
                                         <li class="navigation__item"><a href="../profileuser/profileuser.html" class="navigation__link">Profile</a></li>
@@ -232,7 +232,7 @@
                     <hr/>
                     <p class="text-center">Sabri Selmi and Firas Hamdouni, GoMyCode | 2018  © Tous droits réservés</p>
             </footer>
-            <script src="script.js"></script>
+            <script src="../script.js"></script>
 </body>
 </html>
 
